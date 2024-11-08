@@ -1,4 +1,9 @@
-streamlit
-pandas
-altair
-plotly
+black==24.10.0
+exceptiongroup==1.2.2
+importlib-metadata==8.5.0
+importlib-resources==6.4.0
+jaraco.collections==5.1.0
+plotly==5.24.1
+sqlalchemy==2.0.36
+streamlit-autorefresh==1.0.1
+yfinance==0.2.48
