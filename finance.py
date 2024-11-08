@@ -21,7 +21,7 @@ MARGIN = dict(l=0,r=10,b=10,t=25)
 #######################
 # Page configuration
 st.set_page_config(
-    page_title="Invetments Dashboard",
+    page_title="Investments Dashboard",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded")
