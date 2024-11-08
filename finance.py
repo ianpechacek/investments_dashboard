@@ -215,7 +215,10 @@ with col[1]:
 
     st.text('52 Week Change')
     # st.text('{0:.2f} x {1}'.format(yf_data.info['ask'], yf_data.info['askSize']))
-    st.text('{:.2f}'.format(yf_data.info.get("52WeekChange", "n/a")))
+    if isinstance(yf_data.info.get("52WeekChange", "n/a"), (int, float)):
+        st.text('{:.2f}'.format(yf_data.info.get("52WeekChange", "n/a")))
+    else:
+        st.text("n/a")
     st.divider()
 
     st.text('ROI')
